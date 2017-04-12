@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>后台管理模板</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/index.css" />
+    <script src="js/index.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.js"
+    integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+    crossorigin="anonymous">
+
+</script>
+</head>
+<body>
+
+    <div id="header">
+        <h1>信息管理系统平台</h1>
+
+        <div id="search">
+            <input type="text" placeholder="搜索..."/>
+            <button type="submit" class="tip-bottom" title="Search"></button>
+        </div>
+
+        <div id="user-nav">
+            <div class="frist-nav" id="nav-1">
+                <img src="images/header_one.png">
+                <p>
+                    欢迎你，admin
+                </p>
+                <img src="images/header_five.png">
+
+                <div class="second-nav" id="nav-11">
+                    <div class="san"></div>
+                    <ul>
+                        <li style="border-top: solid 1px #7a8a99;">
+                            个人资料
+                        </li>
+                        <li>我的任务</li>
+                        <li>退出系统</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="frist-nav" id="nav-2">
+                <img src="images/header_two.png" style="margin-right: 3px">
+                <p>
+                    我的消息
+                </p>
+                <img src="images/header_five.png">
+
+                <div class="second-nav" id="nav-21">
+                    <div class="san"></div>
+                    <ul>
+                        <li style="border-top: solid 1px #7a8a99;">
+                            新消息
+                        </li>
+                        <li>收件箱</li>
+                        <li>发件箱</li>
+                        <li>回收站</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="frist-nav">
+                <img src="images/header_three.png">
+                <p>
+                    设置
+                </p>
+            </div>
+            <div class="frist-nav">
+                <img src="images/header_four.png">
+                <p>
+                    退出系统
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div id="top">
+        <div class="top-title">
+            <img src="images/top_one.png">
+            <p>搜索栏</p>
+        </div>
+        <div class="top-nav1">
+
+        </div>
+        <div class="top-nav" id="nav1">
+            竞品分析
+            <ul id="ul1">
+                <li id="li31">竞品识别</li>
+                <li id="li32">竞品对比</li>
+            </ul>
+        </div>
+        <div class="top-nav" id="nav2">
+            口碑分析
+            <ul id="ul2">
+                <li id="li21">产品满意度</li>
+                <li id="li22">用户打分</li>
+                <li id="li23">口碑词云</li>
+                <li id="li24">领先口碑</li>
+            </ul>
+        </div>
+        <div class="top-nav" id="nav3">
+            动态监测
+            <ul id="ul3">
+                <li id="li11">搜索类</li>
+                <li id="li12">社交类</li>
+                <li id="li13">论坛类</li>
+            </ul>
+        </div>
+    </div>
+    <div id="left">
+        <div class="left-form">
+            <form name="搜索类" id="form11">
+
+                <p class="form-title">搜索类</p>
+                
+                <input type="radio" name="选择" value="搜索分布" checked="true"
+                id="choice1">
+                <p>搜索分布</p>
+                <input type="radio" name="选择" value="搜索趋势" id="choice2">
+                <p>搜索趋势</p>
+                <input type="radio" name="选择" value="相关搜索" id="choice3">
+                <p>相关搜索</p>
+                
+
+                <div class="two-choice">
+                    <p>1、选择搜索引擎</p>
+                    <select name="搜索引擎">
+                        <option value="百度">百度</option>
+                        <option value="360">360</option>
+                    </select>
+
+                    <p>2、选择生产厂商</p>
+                    <select name="生产厂商">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>3、选择车型</p>
+                    <select name="车型">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+                </div>
+
+                <div class="three-choice">
+                    <p>1、生产厂商1</p>
+                    <select name="生产厂商1">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>2、车型1</p>
+                    <select name="车型1">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                    <p>3、生产厂商2</p>
+                    <select name="生产厂商2">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>4、车型2</p>
+                    <select name="车型2">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                    <p>5、生产厂商3</p>
+                    <select name="生产厂商3">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>6、车型3</p>
+                    <select name="车型3">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+
+            <form name="社交类" id="form12">
+
+                <p class="form-title">社交类</p>
+
+                <div class="two-choice">
+                    <p>1、选择社交空间</p>
+                    <select name="社交空间">
+                        <option value="QQ空间">QQ空间</option>
+                        <option value="新浪微博">新浪微博</option>
+                    </select>
+
+                    <p>2、选择生产厂商</p>
+                    <select name="生产厂商">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>3、选择车型</p>
+                    <select name="车型">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+                </div>
+
+                
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+
+            <form name="论坛类" id="form13">
+
+                <p class="form-title">论坛类</p>
+                
+                <div class="three-choice">
+                    <p>1、生产厂商1</p>
+                    <select name="生产厂商1">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>2、车型1</p>
+                    <select name="车型1">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                    <p>3、生产厂商2</p>
+                    <select name="生产厂商2">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>4、车型2</p>
+                    <select name="车型2">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                    <p>5、生产厂商3</p>
+                    <select name="生产厂商3">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>6、车型3</p>
+                    <select name="车型3">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+
+            <form name="产品满意度" id="form21">
+
+                <p class="form-title">产品满意度</p>
+                
+                <div class="three-choice">
+                    <p>1、生产厂商1</p>
+                    <select name="生产厂商1">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>2、车型1</p>
+                    <select name="车型1">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                    <p>3、生产厂商2</p>
+                    <select name="生产厂商2">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>4、车型2</p>
+                    <select name="车型2">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                    <p>5、生产厂商3</p>
+                    <select name="生产厂商3">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>6、车型3</p>
+                    <select name="车型3">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+
+            <form name="用户打分" id="form22">
+
+                <p class="form-title">用户打分</p>
+                
+                <div class="three-choice">
+                    <p>1、输入特征词</p>
+                    <select name="特征词">
+                        <option value="外观">外观</option>
+                        <option value="内饰">内饰</option>
+                        <option value="动力">动力</option>
+                    </select>
+
+                    <p>2、生产厂商</p>
+                    <select name="生产厂商">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>3、车型</p>
+                    <select name="车型">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                </div>
+
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+
+            <form name="口碑词云" id="form23">
+
+                <p class="form-title">口碑词云</p>
+                
+                <div class="three-choice">
+
+
+                    <p>1、生产厂商</p>
+                    <select name="生产厂商">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>2、车型</p>
+                    <select name="车型">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                    <p>3、输入特征词</p>
+                    <select name="特征词">
+                        <option value="最满意">最满意</option>
+                        <option value="最不满意">最不满意</option>
+                        <option value="外观">外观</option>
+                        <option value="动力">动力</option>
+                    </select>
+                    
+                </div>
+
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+
+            <form name="领先口碑" id="form24">
+
+                <p class="form-title">领先口碑</p>
+                
+                <div class="three-choice">
+
+
+                    <p>1、生产厂商</p>
+                    <select name="生产厂商">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>2、车型</p>
+                    <select name="车型">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+                    
+                </div>
+
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+
+            <form name="竞品识别" id="form31">
+
+                <p class="form-title">竞品识别</p>
+                
+                <div class="three-choice">
+
+
+                    <p>1、生产厂商</p>
+                    <select name="生产厂商">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>2、车型</p>
+                    <select name="车型">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+                    
+                </div>
+
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+
+            <form name="竞品对比" id="form32">
+
+                <p class="form-title">竞品对比</p>
+                
+                <div class="three-choice">
+                    <p>1、生产厂商1</p>
+                    <select name="生产厂商1">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>2、车型1</p>
+                    <select name="车型1">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                    <p>3、生产厂商2</p>
+                    <select name="生产厂商2">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>4、车型2</p>
+                    <select name="车型2">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+
+                    <p>5、生产厂商3</p>
+                    <select name="生产厂商3">
+                        <option value="奇瑞">奇瑞</option>
+                        <option value="江淮">江淮</option>
+                        <option value="荣威">荣威</option>
+                        <option value="吉利">吉利</option>
+                    </select>
+
+                    <p>6、车型3</p>
+                    <select name="车型3">
+                        <option value="瑞虎">瑞虎</option>
+                        <option value="QQ">QQ</option>
+                    </select>
+                </div>
+
+                <input type="submit" value="搜 索" class="sub">
+            </form>
+        </div>
+    </div>
+
+    <div id="rgt">
+        <div class="rgt-nav">
+            <img src="images/rgt_one.png">
+            <p id="rgt-p">动态监测 > 搜索类</p>
+        </div>
+
+        <div id="content">
+        <p>这是</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        <p>content</p>
+        </div>
+    </div>
+</body>
+</html>
