@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>后台管理模板</title>
+    <title>口碑分析</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/mouth.css" />
     <script src="js/index.js"></script>
     <script
     src="https://code.jquery.com/jquery-3.1.1.js"
@@ -95,7 +95,6 @@
             </ul> -->
         </div>
         </a>
-        <a href="mouth.html">
         <div class="top-nav" id="nav2">
             口碑分析
             <!-- <ul id="ul2">
@@ -105,7 +104,7 @@
                 <li id="li24">领先口碑</li>
             </ul> -->
         </div>
-        </a>
+        <a href="index.html">
         <div class="top-nav" id="nav3">
             动态监测
             <!-- <ul id="ul3">
@@ -114,36 +113,25 @@
                 <li id="li13">论坛类</li>
             </ul> -->
         </div>
+        </a>
     </div>
     <div id="left">
         <div class="left-form">
+
             <form name="cd">
 
-                <p class="left-p1">动态监测</p>
-                
-                <p class="left-p2">搜索类</p>
+                <p class="left-p1">口碑分析</p>
 
-                <p class="left-p3">选择搜索引擎</p>
-                <select name="搜索引擎">
-                    <option value="百度">百度</option>
-                    <option value="360">360</option>
-                </select>
-
-                <p class="left-p2">社交类</p>
-                
-                <p class="left-p3">选择社交空间</p>
-                <select name="社交空间">
-                    <option value="新浪微博">新浪微博</option>
-                    <option value="QQ空间">QQ空间</option>
-                </select>
-
-                <p class="left-p2">论坛类</p>
-                
-                <p class="left-p3">选择论坛种类</p>
-                <select name="论坛种类">
-                    <option value="网易汽车">网易汽车</option>
-                    
-                </select>
+                <div id="left-nav">
+                    <input type="radio" name="口碑分析" value="产品满意度" checked="checked" id="left-input1" />
+                    <p>产品满意度</p>
+                    <input type="radio" name="口碑分析" value="用户打分" id="left-input2"/>
+                    <p>用户打分</p>
+                    <input type="radio" name="口碑分析" value="口碑词云" id="left-input3"/>
+                    <p>口碑词云</p>
+                    <input type="radio" name="口碑分析" value="领先口碑" id="left-input4"/>
+                    <p>领先口碑</p>
+                </div>
 
                 <p class="left-p2">选择汽车类型</p>
 
@@ -173,7 +161,7 @@
     <div id="rgt">
         <div class="rgt-nav">
             <img src="images/rgt_one.png">
-            <p id="rgt-p">动态监测</p>
+            <p id="rgt-p">口碑分析</p>
         </div>
 
         <div id="content">
