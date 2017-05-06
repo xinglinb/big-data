@@ -320,8 +320,10 @@ html{
     height: 40px;
     line-height: 40px;
     float: left;
-    background-color: #323436;
+    /*background-color: #323436;*/
     cursor: pointer;
+    border-bottom: solid 1px #1e2023;
+    box-shadow: 0px 1px 1px #313335;
 }
 
 
@@ -340,12 +342,12 @@ html{
 }
 
 #left .left-form #left-nav input:checked +p{
-    background-color: #1e2023;
+    background-color: #323436;
     color: #fff
 }
 
 #left .left-form #left-nav input:hover +p{
-    background-color: #1e2023;
+    background-color: #323436;
     color: #fff
 }
 
